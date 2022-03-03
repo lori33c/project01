@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="5" failures="1" disabled="0" errors="0" time="0.012" timestamp="2022-03-03T20:59:25.918" name="AllTests">
+  <testsuite name="Image" tests="5" failures="1" disabled="0" skipped="4" errors="0" time="0.012" timestamp="2022-03-03T20:59:25.919">
+    <testcase name="ScreenOutput" status="run" result="completed" time="0.01" timestamp="2022-03-03T20:59:25.919" classname="Image">
+      <failure message="../settings/unittest.cc:37&#x0A;Your program&apos;s output did not match the expected output starting on line 1 character 112.&#x0A;Expected i instead of f&#x0A;&#x0A;Expected output: &#x0A;[32mPlease provide player image filename: Please provide opponent image filename: Please provide player projectile [31mimage filename: Please provide opponent projectile image filename: [00m&#x0A;&#x0A;Your program&apos;s output: &#x0A;[32mPlease provide player image filename: Please provide opponent image filename: Please provide player projectile [31mfilename: Please provide opponent projectile filename: [00m&#x0A;&#x0A;Input: &#x0A;player_1804289383.bmp&#x0A;opponent_1804289383.bmp&#x0A;p_projectile_1804289383.bmp&#x0A;o_projectile_1804289383.bmp&#x0A;&#x0A;Please make sure to use the sentences exactly as specified in the instructions." type=""><![CDATA[../settings/unittest.cc:37
+Your program's output did not match the expected output starting on line 1 character 112.
+Expected i instead of f
+
+Expected output: 
+[32mPlease provide player image filename: Please provide opponent image filename: Please provide player projectile [31mimage filename: Please provide opponent projectile image filename: [00m
+
+Your program's output: 
+[32mPlease provide player image filename: Please provide opponent image filename: Please provide player projectile [31mfilename: Please provide opponent projectile filename: [00m
+
+Input: 
+player_1804289383.bmp
+opponent_1804289383.bmp
+p_projectile_1804289383.bmp
+o_projectile_1804289383.bmp
+
+Please make sure to use the sentences exactly as specified in the instructions.]]></failure>
+    </testcase>
+    <testcase name="Player" status="run" result="skipped" time="0" timestamp="2022-03-03T20:59:25.929" classname="Image">
+      <skipped message="../settings/../cppaudit/gtest_ext.h:24&#x0A;Test skipped until other errors are fixed"><![CDATA[../settings/../cppaudit/gtest_ext.h:24
+Test skipped until other errors are fixed]]></skipped>
+    </testcase>
+    <testcase name="Opponent" status="run" result="skipped" time="0" timestamp="2022-03-03T20:59:25.929" classname="Image">
+      <skipped message="../settings/../cppaudit/gtest_ext.h:24&#x0A;Test skipped until other errors are fixed"><![CDATA[../settings/../cppaudit/gtest_ext.h:24
+Test skipped until other errors are fixed]]></skipped>
+    </testcase>
+    <testcase name="PlayerProjectile" status="run" result="skipped" time="0" timestamp="2022-03-03T20:59:25.930" classname="Image">
+      <skipped message="../settings/../cppaudit/gtest_ext.h:24&#x0A;Test skipped until other errors are fixed"><![CDATA[../settings/../cppaudit/gtest_ext.h:24
+Test skipped until other errors are fixed]]></skipped>
+    </testcase>
+    <testcase name="OpponentProjectile" status="run" result="skipped" time="0" timestamp="2022-03-03T20:59:25.931" classname="Image">
+      <skipped message="../settings/../cppaudit/gtest_ext.h:24&#x0A;Test skipped until other errors are fixed"><![CDATA[../settings/../cppaudit/gtest_ext.h:24
+Test skipped until other errors are fixed]]></skipped>
+    </testcase>
+  </testsuite>
+</testsuites>
