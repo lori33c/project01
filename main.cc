@@ -29,7 +29,25 @@ void DrawPlayer() {
 
 void DrawOpponent() {
   // 2. Create Opponent image (50 x 50 pixel)
-  
+  // 1. Create Opponent image (50 x 50 pixel)
+  const int Opponent_size = 50;
+  graphics::Image Opponent_image(Opponent_size, Opponent_size);
+
+  // Draws the face
+  Opponent_image.DrawCircle(Opponent_size/2, Opponent_size/2, Opponent_size/3, 0, 0, 0);
+  Opponent_image.DrawPolygon({25, 20, 10, 5, 10, 30}, 0, 0, 0);
+  Opponent_image.DrawPolygon({25, 20, 40, 5, 40, 30}, 0, 0, 0);
+
+  // Draw the eyes
+  Opponent_image.DrawCircle(18, 20, 2, 255, 0, 0);
+  Opponent_image.DrawCircle(32, 20, 2, 255, 0, 0);
+
+  // Draw mouth
+  Opponent_image.DrawPolygon({25, 25, 20, 32, 30, 32}, 243, 0, 0);
+
+
+  // Saves the Player image
+  Opponent_image.SaveImageBmp("opponent.bmp");
 }
 
 void DrawPlayerProjectile() {
@@ -59,7 +77,7 @@ int main() {
   DrawPlayer();
   
   // 2. Create Opponent image (50 x 50 pixel)
-  // DrawOpponent();
+  DrawOpponent();
 
   // 3. Create Player Projectile image (5 x 5 pixel)
   DrawPlayerProjectile();
