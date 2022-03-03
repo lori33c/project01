@@ -1,0 +1,4 @@
+<?xml version='1.0'?>
+<replacements xml:space='preserve' incomplete_format='false'>
+<replacement offset='0' length='92'>#include "cpputils/graphics/image.h"&#10;#include &lt;iostream>&#10;#include &lt;string>&#10;#include &lt;vector></replacement>
+</replacements>
