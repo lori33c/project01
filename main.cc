@@ -29,19 +29,23 @@ void DrawPlayer() {
 
 void DrawOpponent() {
   // 2. Create Opponent image (50 x 50 pixel)
-
+  
 }
 
 void DrawPlayerProjectile() {
   // 3. Create Player Projectile image (5 x 5 pixel)
+  const int play_size = 5;
+	graphics::Image play_image(play_size, play_size);
+	play_image.DrawCircle(play_size/2, play_size/2, play_size/2, 0, 0, 255);
+	play_image.SaveImageBmp("PlayerProjectile.bmp");
 }
 
 void DrawOpponentProjectile() {
   // 4. Create Opponent Projectile image (5 x 5 pixel)
   const int Opp_size = 5;
 	graphics::Image Opp_image(Opp_size, Opp_size);
-	OpponentProjectile.DrawCircle(Opp_size/2, Opp_size/2, Opp_size/2, 255, 0, 0);
-	OpponentProjectile.SaveImageBmp("OpponnetProjectile.bmp")
+	Opp_image.DrawCircle(Opp_size/2, Opp_size/2, Opp_size/2, 255, 0, 0);
+	Opp_image.SaveImageBmp("OpponnetProjectile.bmp");
 }
 
 int main() {
@@ -58,10 +62,10 @@ int main() {
   // DrawOpponent();
 
   // 3. Create Player Projectile image (5 x 5 pixel)
-  // DrawPlayerProjectile();
+  DrawPlayerProjectile();
 
   // 4. Create Opponent Projectile image (5 x 5 pixel)
-  // DrawOpponentProjectile();
+  DrawOpponentProjectile();
 
   // Prompt user to input file names
   std::cout << "Please provide player image filename: ";
