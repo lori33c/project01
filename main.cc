@@ -29,6 +29,7 @@ void DrawPlayer() {
 
 void DrawOpponent() {
   // 2. Create Opponent image (50 x 50 pixel)
+
 }
 
 void DrawPlayerProjectile() {
@@ -37,6 +38,10 @@ void DrawPlayerProjectile() {
 
 void DrawOpponentProjectile() {
   // 4. Create Opponent Projectile image (5 x 5 pixel)
+  const int Opp_size = 5;
+	graphics::Image Opp_image(Opp_size, Opp_size);
+	OpponentProjectile.DrawCircle(Opp_size/2, Opp_size/2, Opp_size/2, 255, 0, 0);
+	OpponentProjectile.SaveImageBmp("OpponnetProjectile.bmp")
 }
 
 int main() {
